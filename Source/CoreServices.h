@@ -107,6 +107,9 @@ PLUGIN_API int getSelectedRecordEngineIdx();
 
 namespace RecordNode
 {
+/** **/
+PLUGIN_API void setRecordingDirectory(String dir);
+
 /** Forces creation of new directory on recording */
 PLUGIN_API void createNewrecordingDir();
 

@@ -151,6 +151,14 @@ namespace CoreServices
 	namespace RecordNode
 	{
 
+		void setRecordingDirectory(String dir)
+		{
+			for (auto* node : getProcessorGraph()->getRecordNodes())
+			{
+			  node->setDataDirectory(File(dir));
+			}
+		}
+
 		void createNewrecordingDir()
 		{
 			for (auto* node : getProcessorGraph()->getRecordNodes())
